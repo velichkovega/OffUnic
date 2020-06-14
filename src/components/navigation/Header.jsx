@@ -8,11 +8,11 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import Badge from '@material-ui/core/Badge';
 
 import ProfileList from './ProfileList.jsx';
+import YourMail from './YourMail.jsx';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -36,9 +36,7 @@ class Header extends Component {
         return(
             <Grid container direction="row" justify="center" alignItems="center">
                 <IconButton aria-label="show 4 new mails" color="inherit">
-                    <Badge badgeContent={4} color="secondary">
-                        <MailIcon />
-                    </Badge>
+                    <YourMail />
                 </IconButton>
                 <IconButton aria-label="show 17 new notifications" color="inherit">
                     <Badge badgeContent={17} color="secondary">
