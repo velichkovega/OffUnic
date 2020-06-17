@@ -8,6 +8,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 
+import TexesTable from './TexesTable.jsx';
+
 const useStyles = makeStyles(theme => ({
     container: {
         paddingTop: theme.spacing(3),
@@ -70,14 +72,7 @@ function Documents() {
                     <Typography>Taxes and fees</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                    <div>
-                        <Typography component="div" className={classes.aboutMeText}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </Typography>
-                        <Button variant="contained" color="primary" className={classes.button} endIcon={<AssignmentIndIcon />}>
-                            Show contract
-                        </Button>
-                    </div>
+                    <TexesTable />
                 </ExpansionPanelDetails>
             </ExpansionPanel>
         </div>
